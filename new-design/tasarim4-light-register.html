@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - TurboStock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-register theme-light">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+            <div class="nav-extras">
+                <div class="lang-selector">
+                    <button class="lang-btn" onclick="toggleLang()"><i class="fas fa-globe"></i> EN <i class="fas fa-chevron-down lang-chevron"></i></button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="#" class="lang-option active">🇺🇸 English</a>
+                        <a href="#" class="lang-option">🇹🇷 Türkçe</a>
+                        <a href="#" class="lang-option">🇩🇪 Deutsch</a>
+                        <a href="#" class="lang-option">🇷🇺 Русский</a>
+                    </div>
+                </div>
+                <a href="tasarim4-dark-register.html" class="theme-toggle" title="Switch to Dark Mode"><i class="fas fa-moon"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1 class="auth-title">Create <span>Account</span></h1>
+                <p class="auth-subtitle">Join TurboStock and start shopping</p>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">First Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" class="form-input" placeholder="John">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" class="form-input" placeholder="Doe">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" class="form-input" placeholder="john@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Username</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-at input-icon"></i>
+                        <input type="text" class="form-input" placeholder="johndoe">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" class="form-input" placeholder="Create a strong password" id="password">
+                        <i class="fas fa-eye toggle-password" onclick="togglePassword()"></i>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar"><div class="strength-fill"></div></div>
+                        <p class="strength-text">Password strength: Medium</p>
+                    </div>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span>
+                    <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                </label>
+
+                <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create Account</button>
+            </form>
+
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-text">or sign up with</span>
+                <span class="divider-line"></span>
+            </div>
+
+            <div class="social-buttons">
+                <button class="social-btn"><i class="fab fa-google"></i></button>
+                <button class="social-btn"><i class="fab fa-apple"></i></button>
+                <button class="social-btn"><i class="fab fa-discord"></i></button>
+            </div>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="tasarim4-light-login.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Support</a>
+            </div>
+            <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() { document.getElementById('langDropdown').classList.toggle('active'); }
+        document.addEventListener('click', function(e) { if (!e.target.closest('.lang-selector')) document.getElementById('langDropdown').classList.remove('active'); });
+        function togglePassword() {
+            const pwd = document.getElementById('password');
+            const icon = document.querySelector('.toggle-password');
+            if (pwd.type === 'password') { pwd.type = 'text'; icon.classList.replace('fa-eye', 'fa-eye-slash'); }
+            else { pwd.type = 'password'; icon.classList.replace('fa-eye-slash', 'fa-eye'); }
+        }
+    </script>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+

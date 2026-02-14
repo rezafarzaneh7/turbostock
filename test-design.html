@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboStock - Premium Digital Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style-new-design.css">
+</head>
+<body class="page-turbostock-source theme-light">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+
+            <div class="navbar-search">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search products, sellers, categories...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="tasarim4-light-wallet.html" class="nav-btn">
+                    <i class="fas fa-wallet"></i>
+                    <span>Wallet</span>
+                    <span class="wallet-badge">$125</span>
+                </a>
+                <a href="#" class="nav-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="tasarim4-light-login.html" class="nav-btn primary">
+                    <i class="fas fa-user"></i>
+                    <span>Sign In</span>
+                </a>
+
+                <div class="nav-extras">
+                    <div class="lang-selector">
+                        <button class="lang-btn" onclick="toggleLangDropdown()">
+                            <i class="fas fa-globe"></i>
+                            EN
+                            <i class="fas fa-chevron-down lang-chevron"></i>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active">
+                                <span>🇺🇸</span> English
+                            </a>
+                            <a href="#" class="lang-option">
+                                <span>🇹🇷</span> Türkçe
+                            </a>
+                            <a href="#" class="lang-option">
+                                <span>🇩🇪</span> Deutsch
+                            </a>
+                            <a href="#" class="lang-option">
+                                <span>🇷🇺</span> Русский
+                            </a>
+                        </div>
+                    </div>
+                    <a href="tasarim4-dark-turbostock.html" class="theme-toggle" title="Switch to Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-fire"></i>
+                        #1 Digital Marketplace
+                    </div>
+                    <h1 class="hero-title">
+                        Buy & Sell <span>Digital Products</span> Instantly
+                    </h1>
+                    <p class="hero-description">
+                        TurboStock is the fastest marketplace for digital goods. Accounts, software, game items, and more. Instant delivery, secure payments.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="tasarim4-light-category.html" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Start Shopping
+                        </a>
+                        <a href="tasarim4-light-become-seller.html" class="btn btn-outline">
+                            <i class="fas fa-store"></i> Become a Seller
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">50K+</div>
+                            <div class="stat-label">Active Buyers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5K+</div>
+                            <div class="stat-label">Verified Sellers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$2M+</div>
+                            <div class="stat-label">Monthly Volume</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-cards">
+                        <div class="hero-card">
+                            <div class="hero-card-image">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="hero-card-title">Premium Gaming Account</div>
+                            <div class="hero-card-price">$29.99 <span>$49.99</span></div>
+                        </div>
+                        <div class="hero-card">
+                            <div class="hero-card-image">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="hero-card-title">Dev Tools</div>
+                            <div class="hero-card-price">$14.99</div>
+                        </div>
+                        <div class="hero-card">
+                            <div class="hero-card-image">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="hero-card-title">Design Kit</div>
+                            <div class="hero-card-price">$9.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Browse <span>Categories</span></h2>
+                <a href="tasarim4-light-category.html" class="section-link">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="categories-grid">
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="category-name">Gaming</div>
+                    <div class="category-count">2,450 products</div>
+                </a>
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="category-name">Software</div>
+                    <div class="category-count">1,823 products</div>
+                </a>
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="category-name">Accounts</div>
+                    <div class="category-count">3,156 products</div>
+                </a>
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="category-name">Gift Cards</div>
+                    <div class="category-count">892 products</div>
+                </a>
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="category-name">Design</div>
+                    <div class="category-count">1,245 products</div>
+                </a>
+                <a href="tasarim4-light-category.html" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="category-name">More</div>
+                    <div class="category-count">4,500+ products</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span>Products</span></h2>
+                <a href="tasarim4-light-category.html" class="section-link">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-grid">
+                <a href="tasarim4-light-product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge hot">HOT</span>
+                        <div class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Gaming</div>
+                        <h3 class="product-title">Premium Steam Account - Level 50+</h3>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.9 <span>(128)</span>
+                            </div>
+                            <div class="product-sales">
+                                <i class="fas fa-shopping-bag"></i> 450 sold
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$24.99 <span>$39.99</span></div>
+                            <button class="product-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge new">NEW</span>
+                        <div class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Streaming</div>
+                        <h3 class="product-title">Netflix Premium 1 Year Subscription</h3>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.8 <span>(256)</span>
+                            </div>
+                            <div class="product-sales">
+                                <i class="fas fa-shopping-bag"></i> 1.2K sold
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$19.99</div>
+                            <button class="product-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge sale">SALE</span>
+                        <div class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Software</div>
+                        <h3 class="product-title">JetBrains All Products Pack License</h3>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                5.0 <span>(89)</span>
+                            </div>
+                            <div class="product-sales">
+                                <i class="fas fa-shopping-bag"></i> 320 sold
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$49.99 <span>$89.99</span></div>
+                            <button class="product-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="product-wishlist">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Gift Cards</div>
+                        <h3 class="product-title">Amazon Gift Card $100 Value</h3>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                4.9 <span>(512)</span>
+                            </div>
+                            <div class="product-sales">
+                                <i class="fas fa-shopping-bag"></i> 2.1K sold
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$89.99</div>
+                            <button class="product-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Sellers -->
+    <section class="sellers">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Top <span>Sellers</span></h2>
+                <a href="#" class="section-link">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="sellers-grid">
+                <a href="tasarim4-light-seller-detail.html" class="seller-card">
+                    <div class="seller-avatar">
+                        D
+                        <div class="seller-verified">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="seller-name">DigiMaster</div>
+                    <div class="seller-level">Level 5 Seller</div>
+                    <div class="seller-stats">
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">4.9</div>
+                            <div class="seller-stat-label">Rating</div>
+                        </div>
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">2.4K</div>
+                            <div class="seller-stat-label">Sales</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-seller-detail.html" class="seller-card">
+                    <div class="seller-avatar">
+                        P
+                        <div class="seller-verified">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="seller-name">ProKeys</div>
+                    <div class="seller-level">Level 4 Seller</div>
+                    <div class="seller-stats">
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">4.8</div>
+                            <div class="seller-stat-label">Rating</div>
+                        </div>
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">1.8K</div>
+                            <div class="seller-stat-label">Sales</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-seller-detail.html" class="seller-card">
+                    <div class="seller-avatar">
+                        G
+                        <div class="seller-verified">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="seller-name">GameVault</div>
+                    <div class="seller-level">Level 5 Seller</div>
+                    <div class="seller-stats">
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">5.0</div>
+                            <div class="seller-stat-label">Rating</div>
+                        </div>
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">3.2K</div>
+                            <div class="seller-stat-label">Sales</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="tasarim4-light-seller-detail.html" class="seller-card">
+                    <div class="seller-avatar">
+                        S
+                        <div class="seller-verified">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="seller-name">SoftHub</div>
+                    <div class="seller-level">Level 3 Seller</div>
+                    <div class="seller-stats">
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">4.7</div>
+                            <div class="seller-stat-label">Rating</div>
+                        </div>
+                        <div class="seller-stat">
+                            <div class="seller-stat-value">956</div>
+                            <div class="seller-stat-label">Sales</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span>TurboStock</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Instant Delivery</h3>
+                    <p class="feature-desc">Get your products delivered automatically within seconds after payment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-desc">Multiple payment options with buyer protection on every purchase</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-desc">Our dedicated team is here to help you anytime, anywhere</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="feature-title">Low Fees</h3>
+                    <p class="feature-desc">Only 5% commission for sellers - one of the lowest in the market</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="section-container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <div class="cta-badge">
+                        <i class="fas fa-rocket"></i>
+                        Start Earning Today
+                    </div>
+                    <h2 class="cta-title">Ready to Sell Your <span>Digital Products</span>?</h2>
+                    <p class="cta-desc">Join thousands of successful sellers on TurboStock. Set up your store in minutes and start earning with instant payouts.</p>
+                    <div class="cta-buttons">
+                        <a href="tasarim4-light-become-seller.html" class="btn btn-primary">
+                            <i class="fas fa-store"></i> Open Your Store
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-brand">
+                        <div class="brand-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="brand-text">Turbo<span>Stock</span></span>
+                    </div>
+                    <p class="footer-desc">The fastest and most secure marketplace for digital products. Buy and sell with confidence.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Marketplace</h4>
+                    <ul class="footer-links">
+                        <li><a href="tasarim4-light-category.html">All Products</a></li>
+                        <li><a href="tasarim4-light-category.html">Gaming</a></li>
+                        <li><a href="tasarim4-light-category.html">Software</a></li>
+                        <li><a href="tasarim4-light-category.html">Accounts</a></li>
+                        <li><a href="tasarim4-light-category.html">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+                <div class="footer-payments">
+                    <div class="payment-icon"><i class="fab fa-bitcoin"></i></div>
+                    <div class="payment-icon"><i class="fab fa-ethereum"></i></div>
+                    <div class="payment-icon"><i class="fab fa-cc-visa"></i></div>
+                    <div class="payment-icon"><i class="fab fa-cc-mastercard"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLangDropdown() {
+            document.getElementById('langDropdown').classList.toggle('active');
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.lang-selector')) {
+                document.getElementById('langDropdown').classList.remove('active');
+            }
+        });
+    </script>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - TurboStock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-wallet theme-light">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+            <div class="navbar-actions">
+                <a href="tasarim4-light-wallet.html" class="nav-btn"><i class="fas fa-wallet"></i><span>Wallet</span><span class="wallet-badge">$125</span></a>
+                <a href="#" class="nav-btn"><i class="fas fa-shopping-cart"></i></a>
+                <a href="tasarim4-light-my-profile.html" class="nav-btn primary"><i class="fas fa-user"></i><span>Profile</span></a>
+                <div class="nav-extras">
+                    <div class="lang-selector">
+                        <button class="lang-btn" onclick="toggleLang()"><i class="fas fa-globe"></i> EN <i class="fas fa-chevron-down lang-chevron"></i></button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active">🇺🇸 English</a>
+                            <a href="#" class="lang-option">🇹🇷 Türkçe</a>
+                            <a href="#" class="lang-option">🇩🇪 Deutsch</a>
+                            <a href="#" class="lang-option">🇷🇺 Русский</a>
+                        </div>
+                    </div>
+                    <a href="tasarim4-dark-wallet.html" class="theme-toggle" title="Switch to Dark Mode"><i class="fas fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="tasarim4-light-turbostock-source.html">Home</a><span>/</span>
+                <span class="current">Wallet</span>
+            </div>
+            <h1 class="page-title">My <span>Wallet</span></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <aside class="sidebar-menu">
+                <a href="tasarim4-light-my-profile.html" class="menu-item"><i class="fas fa-user"></i> My Profile</a>
+                <a href="tasarim4-light-my-orders.html" class="menu-item"><i class="fas fa-shopping-bag"></i> My Orders</a>
+                <a href="tasarim4-light-wallet.html" class="menu-item active"><i class="fas fa-wallet"></i> Wallet</a>
+                <a href="#" class="menu-item"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+                <a href="tasarim4-light-login.html" class="menu-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </aside>
+
+            <main>
+                <div class="balance-card">
+                    <div class="balance-label">Available Balance</div>
+                    <div class="balance-amount">$125.00</div>
+                    <div class="balance-actions">
+                        <button class="balance-btn"><i class="fas fa-plus"></i> Add Funds</button>
+                        <button class="balance-btn outline"><i class="fas fa-arrow-down"></i> Withdraw</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-arrow-up"></i></div>
+                        <div class="stat-value">$1,450</div>
+                        <div class="stat-label">Total Deposits</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="stat-value">$1,325</div>
+                        <div class="stat-label">Total Spent</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <div class="stat-value">48</div>
+                        <div class="stat-label">Transactions</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-history"></i> Recent Transactions</h3>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon deposit"><i class="fas fa-arrow-down"></i></div>
+                            <div class="transaction-info">
+                                <div class="transaction-title">Deposit via Crypto</div>
+                                <div class="transaction-date">Jan 24, 2026 at 10:30</div>
+                            </div>
+                            <div class="transaction-amount positive">+$50.00</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon purchase"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="transaction-info">
+                                <div class="transaction-title">Purchase: Steam Account</div>
+                                <div class="transaction-date">Jan 24, 2026 at 14:32</div>
+                            </div>
+                            <div class="transaction-amount negative">-$24.99</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon earning"><i class="fas fa-coins"></i></div>
+                            <div class="transaction-info">
+                                <div class="transaction-title">Referral Bonus</div>
+                                <div class="transaction-date">Jan 23, 2026 at 09:15</div>
+                            </div>
+                            <div class="transaction-amount positive">+$5.00</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon purchase"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="transaction-info">
+                                <div class="transaction-title">Purchase: Netflix Subscription</div>
+                                <div class="transaction-date">Jan 23, 2026 at 11:45</div>
+                            </div>
+                            <div class="transaction-amount negative">-$19.99</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon deposit"><i class="fas fa-arrow-down"></i></div>
+                            <div class="transaction-info">
+                                <div class="transaction-title">Deposit via Card</div>
+                                <div class="transaction-date">Jan 20, 2026 at 16:20</div>
+                            </div>
+                            <div class="transaction-amount positive">+$100.00</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><div class="brand-icon"><i class="fas fa-bolt"></i></div><span class="brand-text">Turbo<span>Stock</span></span></div>
+                <div class="footer-links"><a href="#">About</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Support</a></div>
+                <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() { document.getElementById('langDropdown').classList.toggle('active'); }
+        document.addEventListener('click', function(e) { if (!e.target.closest('.lang-selector')) document.getElementById('langDropdown').classList.remove('active'); });
+    </script>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+

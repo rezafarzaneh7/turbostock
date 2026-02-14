@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - TurboStock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-my-profile theme-light">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+            <div class="navbar-actions">
+                <a href="tasarim4-light-wallet.html" class="nav-btn"><i class="fas fa-wallet"></i><span>Wallet</span><span class="wallet-badge">$125</span></a>
+                <a href="#" class="nav-btn"><i class="fas fa-shopping-cart"></i></a>
+                <a href="tasarim4-light-my-profile.html" class="nav-btn primary"><i class="fas fa-user"></i><span>Profile</span></a>
+                <div class="nav-extras">
+                    <div class="lang-selector">
+                        <button class="lang-btn" onclick="toggleLang()"><i class="fas fa-globe"></i> EN <i class="fas fa-chevron-down lang-chevron"></i></button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active">🇺🇸 English</a>
+                            <a href="#" class="lang-option">🇹🇷 Türkçe</a>
+                            <a href="#" class="lang-option">🇩🇪 Deutsch</a>
+                            <a href="#" class="lang-option">🇷🇺 Русский</a>
+                        </div>
+                    </div>
+                    <a href="tasarim4-dark-my-profile.html" class="theme-toggle" title="Switch to Dark Mode"><i class="fas fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="tasarim4-light-turbostock-source.html">Home</a><span>/</span>
+                <span class="current">My Profile</span>
+            </div>
+            <h1 class="page-title">My <span>Profile</span></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <aside class="sidebar-menu">
+                <a href="tasarim4-light-my-profile.html" class="menu-item active"><i class="fas fa-user"></i> My Profile</a>
+                <a href="tasarim4-light-my-orders.html" class="menu-item"><i class="fas fa-shopping-bag"></i> My Orders</a>
+                <a href="tasarim4-light-wallet.html" class="menu-item"><i class="fas fa-wallet"></i> Wallet</a>
+                <a href="#" class="menu-item"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+                <a href="tasarim4-light-login.html" class="menu-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </aside>
+
+            <main>
+                <div class="profile-header">
+                    <div class="profile-avatar">J<div class="avatar-edit"><i class="fas fa-camera"></i></div></div>
+                    <div class="profile-info">
+                        <h2 class="profile-name">John Doe</h2>
+                        <p class="profile-email">john.doe@email.com</p>
+                        <div class="profile-badges">
+                            <span class="profile-badge"><i class="fas fa-check-circle"></i> Verified</span>
+                            <span class="profile-badge"><i class="fas fa-star"></i> Premium</span>
+                        </div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="profile-stat"><div class="profile-stat-value">48</div><div class="profile-stat-label">Orders</div></div>
+                        <div class="profile-stat"><div class="profile-stat-value">$1,325</div><div class="profile-stat-label">Spent</div></div>
+                        <div class="profile-stat"><div class="profile-stat-value">Jan 2024</div><div class="profile-stat-label">Member Since</div></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><span><i class="fas fa-user-edit"></i> Personal Information</span><span class="edit-btn"><i class="fas fa-pen"></i> Edit</span></h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-input" value="John" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-input" value="Doe" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" value="john.doe@email.com" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" value="+1 234 567 8900" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><span><i class="fas fa-lock"></i> Security</span></h3>
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-input" value="••••••••••••" disabled>
+                    </div>
+                    <div class="profile-action-row">
+                        <button class="btn btn-outline"><i class="fas fa-key"></i> Change Password</button>
+                        <button class="btn btn-outline"><i class="fas fa-shield-alt"></i> Enable 2FA</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><span><i class="fas fa-bell"></i> Notifications</span></h3>
+                    <div class="notification-list">
+                        <label class="notification-item">
+                            <span class="text-secondary">Email notifications for orders</span>
+                            <input type="checkbox" checked class="notification-toggle">
+                        </label>
+                        <label class="notification-item">
+                            <span class="text-secondary">Email notifications for promotions</span>
+                            <input type="checkbox" class="notification-toggle">
+                        </label>
+                        <label class="notification-item">
+                            <span class="text-secondary">Push notifications</span>
+                            <input type="checkbox" checked class="notification-toggle">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><span><i class="fas fa-exclamation-triangle text-danger"></i> Danger Zone</span></h3>
+                    <p class="danger-text">Once you delete your account, there is no going back. Please be certain.</p>
+                    <button class="btn btn-danger"><i class="fas fa-trash"></i> Delete Account</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><div class="brand-icon"><i class="fas fa-bolt"></i></div><span class="brand-text">Turbo<span>Stock</span></span></div>
+                <div class="footer-links"><a href="#">About</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Support</a></div>
+                <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() { document.getElementById('langDropdown').classList.toggle('active'); }
+        document.addEventListener('click', function(e) { if (!e.target.closest('.lang-selector')) document.getElementById('langDropdown').classList.remove('active'); });
+    </script>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+

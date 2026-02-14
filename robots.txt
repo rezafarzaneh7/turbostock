@@ -1,0 +1,29 @@
+# HStore Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /uploads/private/
+Disallow: /logs/
+
+# Disallow user-specific pages
+Disallow: /wallet.php
+Disallow: /orders.php
+Disallow: /messages.php
+Disallow: /settings.php
+Disallow: /notifications.php
+
+# Allow important pages
+Allow: /index.php
+Allow: /search.php
+Allow: /categories.php
+Allow: /product.php
+Allow: /store.php
+Allow: /stores.php
+
+# Sitemap
+Sitemap: https://hstore.site/sitemap.xml

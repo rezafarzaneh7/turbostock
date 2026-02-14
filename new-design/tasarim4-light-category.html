@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Products - TurboStock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-category theme-light">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+            <div class="navbar-search">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search products...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="navbar-actions">
+                <a href="tasarim4-light-wallet.html" class="nav-btn">
+                    <i class="fas fa-wallet"></i>
+                    <span>Wallet</span>
+                    <span class="wallet-badge">$125</span>
+                </a>
+                <a href="#" class="nav-btn"><i class="fas fa-shopping-cart"></i></a>
+                <a href="tasarim4-light-login.html" class="nav-btn primary">
+                    <i class="fas fa-user"></i>
+                    <span>Sign In</span>
+                </a>
+                <div class="nav-extras">
+                    <button class="lang-btn">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+                    <a href="tasarim4-dark-category.html" class="theme-toggle" title="Switch to Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="tasarim4-light-turbostock-source.html">Home</a>
+                <span>/</span>
+                <span class="current">Browse Products</span>
+            </div>
+            <h1 class="page-title">Browse <span>Products</span></h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="filter-card">
+                    <h3 class="filter-title"><i class="fas fa-th-large"></i> Categories</h3>
+                    <div class="categories-list">
+                        <a href="#" class="category-item active">
+                            <i class="fas fa-layer-group"></i> All Categories
+                            <span class="count">12,450</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-gamepad"></i> Gaming
+                            <span class="count">2,450</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-code"></i> Software
+                            <span class="count">1,823</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-user-circle"></i> Accounts
+                            <span class="count">3,156</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-gift"></i> Gift Cards
+                            <span class="count">892</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-palette"></i> Design Assets
+                            <span class="count">1,245</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-book"></i> E-Books
+                            <span class="count">756</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <i class="fas fa-music"></i> Audio
+                            <span class="count">432</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="filter-card">
+                    <h3 class="filter-title"><i class="fas fa-filter"></i> Filters</h3>
+                    
+                    <div class="filter-group">
+                        <div class="filter-group-title"><i class="fas fa-dollar-sign"></i> Price Range</div>
+                        <div class="price-inputs">
+                            <input type="text" class="price-input" placeholder="Min">
+                            <span class="price-separator">-</span>
+                            <input type="text" class="price-input" placeholder="Max">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-group-title"><i class="fas fa-star"></i> Rating</div>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="stars">★★★★★</span>
+                                <span class="label-text">(4.5+)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="stars">★★★★☆</span>
+                                <span class="label-text">(4.0+)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="stars">★★★☆☆</span>
+                                <span class="label-text">(3.0+)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-group-title"><i class="fas fa-check-circle"></i> Seller Status</div>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="label-text">Verified Sellers</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="label-text">Top Rated</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn-apply">
+                        <i class="fas fa-check"></i> Apply Filters
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Products -->
+            <main class="products-section">
+                <div class="products-header">
+                    <p class="results-count">Showing <strong>1-24</strong> of <strong>12,450</strong> products</p>
+                    <div class="sort-wrapper">
+                        <div class="view-toggle">
+                            <button class="view-btn active"><i class="fas fa-th"></i></button>
+                            <button class="view-btn"><i class="fas fa-list"></i></button>
+                        </div>
+                        <select class="sort-select">
+                            <option>Most Popular</option>
+                            <option>Newest First</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Best Rating</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge hot">HOT</span>
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Gaming</div>
+                            <h3 class="product-title">Premium Steam Account - Level 50+</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 4.9 <span>(128)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 450 sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$24.99 <span>$39.99</span></div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 2 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge new">NEW</span>
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Streaming</div>
+                            <h3 class="product-title">Netflix Premium 1 Year Subscription</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 4.8 <span>(256)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 1.2K sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$19.99</div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 3 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge sale">SALE</span>
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Software</div>
+                            <h3 class="product-title">JetBrains All Products Pack License</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 5.0 <span>(89)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 320 sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$49.99 <span>$89.99</span></div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 4 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Gift Cards</div>
+                            <h3 class="product-title">Amazon Gift Card $100 Value</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 4.9 <span>(512)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 2.1K sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$89.99</div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 5 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Design</div>
+                            <h3 class="product-title">Premium UI Kit - 500+ Components</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 4.7 <span>(76)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 189 sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$34.99</div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Product 6 -->
+                    <a href="tasarim4-light-product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge hot">HOT</span>
+                            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-category">Streaming</div>
+                            <h3 class="product-title">Spotify Premium Family Plan - 1 Year</h3>
+                            <div class="product-meta">
+                                <div class="product-rating"><i class="fas fa-star"></i> 4.9 <span>(342)</span></div>
+                                <div class="product-sales"><i class="fas fa-shopping-bag"></i> 890 sold</div>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">$14.99 <span>$29.99</span></div>
+                                <button class="product-btn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                    <span class="brand-text">Turbo<span>Stock</span></span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Support</a>
+                </div>
+                <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - TurboStock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-order-details theme-light">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="tasarim4-light-turbostock-source.html" class="navbar-brand">
+                <div class="brand-icon"><i class="fas fa-bolt"></i></div>
+                <span class="brand-text">Turbo<span>Stock</span></span>
+            </a>
+            <div class="navbar-actions">
+                <a href="tasarim4-light-wallet.html" class="nav-btn"><i class="fas fa-wallet"></i><span>Wallet</span><span class="wallet-badge">$125</span></a>
+                <a href="#" class="nav-btn"><i class="fas fa-shopping-cart"></i></a>
+                <a href="tasarim4-light-my-profile.html" class="nav-btn primary"><i class="fas fa-user"></i><span>Profile</span></a>
+                <div class="nav-extras">
+                    <div class="lang-selector">
+                        <button class="lang-btn" onclick="toggleLang()"><i class="fas fa-globe"></i> EN <i class="fas fa-chevron-down lang-chevron"></i></button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <a href="#" class="lang-option active">🇺🇸 English</a>
+                            <a href="#" class="lang-option">🇹🇷 Türkçe</a>
+                            <a href="#" class="lang-option">🇩🇪 Deutsch</a>
+                            <a href="#" class="lang-option">🇷🇺 Русский</a>
+                        </div>
+                    </div>
+                    <a href="tasarim4-dark-order-details.html" class="theme-toggle" title="Switch to Dark Mode"><i class="fas fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="tasarim4-light-turbostock-source.html">Home</a><span>/</span>
+                <a href="tasarim4-light-my-orders.html">My Orders</a><span>/</span>
+                <span class="current">#TS-2024-7845</span>
+            </div>
+            <h1 class="page-title">Order <span>#TS-2024-7845</span> <span class="order-status-badge completed"><i class="fas fa-check-circle"></i> Completed</span></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="order-details">
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-box"></i> Product Information</h3>
+                    <div class="product-info">
+                        <div class="product-image"><i class="fas fa-gamepad"></i></div>
+                        <div class="product-details">
+                            <div class="category">Gaming</div>
+                            <h3>Premium Steam Account - Level 50+ with 100 Games</h3>
+                            <p class="seller">Sold by <a href="tasarim4-light-seller-detail.html">DigiMaster</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-key"></i> Delivery Content</h3>
+                    <div class="delivery-content">
+                        <h4>Account Credentials</h4>
+                        <div class="delivery-code">
+                            <button class="copy-btn"><i class="fas fa-copy"></i> Copy</button>
+                            Username: premium_gamer_2024<br>
+                            Password: X7k#mP9$vL2@nQ4w<br>
+                            Email: premium@steamacc.com
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-history"></i> Order Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">Jan 24, 2026 at 14:35</div>
+                            <div class="timeline-title">Delivered</div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">Jan 24, 2026 at 14:33</div>
+                            <div class="timeline-title">Payment Confirmed</div>
+                        </div>
+                        <div class="timeline-item completed">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-time">Jan 24, 2026 at 14:32</div>
+                            <div class="timeline-title">Order Placed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-receipt"></i> Order Summary</h3>
+                    <div class="info-row"><span class="info-label">Order ID</span><span class="info-value">#TS-2024-7845</span></div>
+                    <div class="info-row"><span class="info-label">Date</span><span class="info-value">Jan 24, 2026</span></div>
+                    <div class="info-row"><span class="info-label">Payment Method</span><span class="info-value">Wallet</span></div>
+                    <div class="info-row"><span class="info-label">Subtotal</span><span class="info-value">$24.99</span></div>
+                    <div class="info-row"><span class="info-label">Fee</span><span class="info-value">$0.00</span></div>
+                    <div class="info-row"><span class="info-label">Total</span><span class="info-value price">$24.99</span></div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-headset"></i> Need Help?</h3>
+                    <button class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Seller</button>
+                    <button class="btn btn-outline"><i class="fas fa-flag"></i> Report Issue</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title"><i class="fas fa-star"></i> Leave a Review</h3>
+                    <button class="btn btn-primary"><i class="fas fa-star"></i> Write Review</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand"><div class="brand-icon"><i class="fas fa-bolt"></i></div><span class="brand-text">Turbo<span>Stock</span></span></div>
+                <div class="footer-links"><a href="#">About</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Support</a></div>
+                <p class="footer-copyright">© 2026 TurboStock. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() { document.getElementById('langDropdown').classList.toggle('active'); }
+        document.addEventListener('click', function(e) { if (!e.target.closest('.lang-selector')) document.getElementById('langDropdown').classList.remove('active'); });
+    </script>
+    <script>
+        (function () {
+            var toggles = document.querySelectorAll('.theme-toggle');
+            if (!toggles.length) {
+                return;
+            }
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var href = toggle.getAttribute('href');
+                    if (!href) {
+                        return;
+                    }
+                    href = href.split('#')[0];
+                    sessionStorage.setItem('scroll-restore:' + href, String(window.scrollY || window.pageYOffset || 0));
+                });
+            });
+
+            var file = location.pathname.split('/').pop();
+            var key = 'scroll-restore:' + file;
+            var pos = sessionStorage.getItem(key);
+            if (pos) {
+                sessionStorage.removeItem(key);
+                var y = parseInt(pos, 10);
+                if (!isNaN(y)) {
+                    window.scrollTo(0, y);
+                }
+            }
+        })();
+    </script>
+</body></html>
+
+
+
+
+
+
